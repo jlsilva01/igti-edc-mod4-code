@@ -1,5 +1,4 @@
-# edc_mod4_exercise_igti
+# Exercício IGTI - Modulo 4 - EDC - Docker
 
-Project started in September 07, 2021.
-
-**Please, complete here information on using and testing this project.**
+- Docker
+- Kubernetes
