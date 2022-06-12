@@ -3,3 +3,4 @@
 - Docker
 - Kubernetes
 - AWS EMR
+- AWS EKR
