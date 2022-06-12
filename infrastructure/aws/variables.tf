@@ -1,13 +1,13 @@
 variable "region_id" {
-  default = "us-east-2"
+  default = "us-east-1"
 }
 
 variable "prefix" {
-  default = "igti-ney-mod4"
+  default = "igti-jorge-mod4"
 }
 
 variable "account" {
-  default = 127012818163
+  default = 431738431676
 }
 
 # Prefix configuration and project common tags
@@ -17,12 +17,12 @@ locals {
     Project      = "Datalake"
     ManagedBy    = "Terraform"
     Department   = "systems",
-    Provider     = "A3DATA",
+    Provider     = "JL2TECH",
     Owner        = "Data Engineering"
     BusinessUnit = "Data"
     Billing      = "Infrastructure"
     Environment  = terraform.workspace
-    UserEmail    = "neylson.crepalde@a3data.com.br"
+    UserEmail    = "jorge.cesco@gmail.com"
   }
 }
 
