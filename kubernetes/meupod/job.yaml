@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: readpandas
+spec:
+  backoffLimit: 3
+  activeDeadlineSeconds: 60
+  template:
+    spec:
+      containers:
+      - name: readshow
+        image: jlsilva01/exemplo_job:v1
+        command: ["python", "-c", "print('Hello, IGTI... Firmeza?')"]
+      restartPolicy: Never

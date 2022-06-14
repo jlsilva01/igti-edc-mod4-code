@@ -2,3 +2,4 @@
 
 - Docker
 - Kubernetes
+- Python
