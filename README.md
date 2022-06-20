@@ -27,9 +27,7 @@ Procedimento utlizado para provisionamento do Cluster Kubernetes e do Apache Air
 `helm repo list`
 
 `helm upgrade --install airflow apache-airflow/airflow -n airflow --debug`
-
 <br>OU<br>
-
 `helm install airflow apache-airflow/airflow -n airflow --debug`
 
 `kubectl port-forward svc/airflow-webserver 8080:8080 -n airflow`
