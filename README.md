@@ -1,4 +1,6 @@
+<p align="center">
 ![k8s+airflow](img/kubernetes+airflow.jpg)
+</p>
 
 ### Exercício IGTI - Modulo 4 - Bootcamp Engenheiro de dados cloud - Docker + Kubernetes + AirFlow + Spark Operator
 
@@ -40,4 +42,6 @@ Procedimento utlizado para provisionamento do Cluster Kubernetes e do Apache Air
 
 `gcloud container clusters delete airflow-cluster --region "us-east1"`
 
+<p align="center">
 ![airflow](img/airflow.jpg)
+</p>
