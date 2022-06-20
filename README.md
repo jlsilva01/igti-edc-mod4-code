@@ -26,14 +26,16 @@ Procedimento utlizado para provisionamento do Cluster Kubernetes e do Apache Air
 
 `helm repo list`
 
-`helm upgrade --install airflow apache-airflow/airflow -n airflow --debug (instala o pacote padrao do airflow)`
-OU
-`helm install airflow apache-airflow/airflow -n airflow --debug (instala o pacote padrao do airflow)`
+`helm upgrade --install airflow apache-airflow/airflow -n airflow --debug`
 
-`kubectl port-forward svc/airflow-webserver 8080:8080 -n airflow (por causa do ClusterIP)`
+<br>OU<br>
 
-`helm show values apache-airflow/airflow > airflow/my_values.yaml (gera um arquivo yaml para personalizarmos o nosso pacote - chart)`
+`helm install airflow apache-airflow/airflow -n airflow --debug`
 
-`helm upgrade --install airflow apache-airflow/airflow -n airflow -f airflow/my_values.yaml --debug</code>`
+`kubectl port-forward svc/airflow-webserver 8080:8080 -n airflow`
+
+`helm show values apache-airflow/airflow > airflow/my_values.yaml`
+
+`helm upgrade --install airflow apache-airflow/airflow -n airflow -f airflow/my_values.yaml --debug`
 
 ![airflow](img/airflow.jpg)
