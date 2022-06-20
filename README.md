@@ -16,7 +16,7 @@ Estudo de criação de um ambiente Kubernetes na Google Cloud, com Cloud Storage
 
 Procedimento utlizado para provisionamento do Cluster Kubernetes e do Apache AirFlow:
 
-`gcloud container clusters create airflow-cluster --machine-type e2-medium --num-nodes 1 --region "us-east1"
+<code>gcloud container clusters create airflow-cluster --machine-type e2-medium --num-nodes 1 --region "us-east1"
 
 gcloud container clusters get-credentials airflow-cluster --region "us-east1"
 
@@ -34,7 +34,7 @@ kubectl port-forward svc/airflow-webserver 8080:8080 -n airflow (por causa do Cl
 
 helm show values apache-airflow/airflow > airflow/my_values.yaml (gera um arquivo yaml para personalizarmos o nosso pacote - chart)
 
-helm upgrade --install airflow apache-airflow/airflow -n airflow -f airflow/my_values.yaml --debug`
+helm upgrade --install airflow apache-airflow/airflow -n airflow -f airflow/my_values.yaml --debug</code>
 
 
 
