@@ -16,10 +16,7 @@ Estudo de criação de um ambiente Kubernetes na Google Cloud, com Cloud Storage
 
 Procedimento utlizado para provisionamento do Cluster Kubernetes e do Apache AirFlow:
 
-`
-## Cria Kubernetes Google
-
-gcloud container clusters create airflow-cluster --machine-type e2-medium --num-nodes 1 --region "us-east1"
+`gcloud container clusters create airflow-cluster --machine-type e2-medium --num-nodes 1 --region "us-east1"
 
 gcloud container clusters get-credentials airflow-cluster --region "us-east1"
 
