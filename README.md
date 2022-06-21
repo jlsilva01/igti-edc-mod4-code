@@ -4,11 +4,11 @@
 
 </div>
 
-## Exercício IGTI - Modulo 4 - Bootcamp Engenheiro de dados cloud - Docker + Kubernetes + AirFlow + Spark Operator
+## Docker + Kubernetes + AirFlow + Spark Operator
 
-Estudo de criação de um ambiente Kubernetes na Google Cloud, com Cloud Storage (bucket), usando as seguites ferramentas/tecnologias:
+Estudo de criação de um ambiente Kubernetes na Google Cloud, com Cloud Storage (bucket), como parte do Módulo 4 do curso de MBA em Engenharia de Dados - IGTI - Bootcamp Engenheiro de dados Cloud, usando as seguites ferramentas/tecnologias:
 
-* Docker (docker file, docker job) - Docker Desktop (Windows)
+* Docker (docker file, docker job) - Docker Desktop (https://docs.docker.com/desktop/windows/install/)
 * Google SDK Client (https://cloud.google.com/sdk/docs/install-sdk)
 * Kubernetes Engine (pod, job, deployment e service)
 * Cloud Storage
