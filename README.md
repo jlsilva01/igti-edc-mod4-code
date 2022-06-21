@@ -40,15 +40,13 @@ Visualiza os dados do repo:<br>
 Atualiza o repo:<br>
 `helm repo update`
 
-Efetua a instalação do pacote (helm chart) do Apache AirFlow no Cluster Kubernetes criado acima:<br>
+Efetua a instalação do pacote padrão (helm chart) do Apache AirFlow no Kubernetes:<br>
 `helm upgrade --install airflow apache-airflow/airflow -n airflow --debug`
-<br>OU<br>
-`helm install airflow apache-airflow/airflow -n airflow --debug`
 
 Permite acesso da console web atraves pelo localhost:<br>
 `kubectl port-forward svc/airflow-webserver 8080:8080 -n airflow`
 
-Cria um arquivo yaml para que seja possivel custmizar o seu chart do AirFlow:<br>
+Cria um arquivo yaml para que seja possivel customizar o chart do AirFlow:<br>
 `helm show values apache-airflow/airflow > airflow/my_values.yaml`
 
 Atualiza a instalação com as alterações realizadas no arquivo my_values.yaml:<br>
