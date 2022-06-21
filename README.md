@@ -20,7 +20,7 @@ Estudo de caso de um ambiente Kubernetes na Google Cloud, com Cloud Storage (buc
 * <a href='https://code.visualstudio.com/download'>Visual Studio Code</a>
 * <a href='https://www.terraform.io/downloads'>Terraform</a>
 
-#### Procedimento utlizado para provisionamento do Cluster Kubernetes e do Apache AirFlow:
+### Procedimento utlizado para provisionamento do Cluster Kubernetes e do Apache AirFlow:
 
 Cria o Cluster do Kubernetes no GCP via CLI:<br>
 `gcloud container clusters create airflow-cluster --machine-type e2-medium --num-nodes 1 --region "us-east1"`
