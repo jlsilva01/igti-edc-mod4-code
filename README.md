@@ -23,26 +23,39 @@ Estudo de caso de um ambiente Kubernetes na Google Cloud, com Cloud Storage (buc
 
 Procedimento utlizado para provisionamento do Cluster Kubernetes e do Apache AirFlow:
 
+Cria o Cluster do Kubernetes no GCP via CLI:
 `gcloud container clusters create airflow-cluster --machine-type e2-medium --num-nodes 1 --region "us-east1"`
 
+Autoriza conexão através do Kubectl:
 `gcloud container clusters get-credentials airflow-cluster --region "us-east1"`
 
+Cria a namespace airflow:
 `kubectl create namespace airflow`
 
+Configura o repo oficial do Helm Chart do Apache AirFlow:
 `helm repo add apache-airflow https://airflow.apache.org`
 
+Visualiza os dados do repo:
 `helm repo list`
 
+Atualiza o repo:
+`helm repo update`
+
+Efetua a instalação do pacote (helm chart) do Apache AirFlow no Cluster Kubernetes criado acima:
 `helm upgrade --install airflow apache-airflow/airflow -n airflow --debug`
 <br>OU<br>
 `helm install airflow apache-airflow/airflow -n airflow --debug`
 
+Permite acesso da console web atraves pelo localhost:
 `kubectl port-forward svc/airflow-webserver 8080:8080 -n airflow`
 
+Cria um arquivo yaml para que seja possivel custmizar o seu chart do AirFlow:
 `helm show values apache-airflow/airflow > airflow/my_values.yaml`
 
+Atualiza a instalação com as alterações realizadas no arquivo my_values.yaml:
 `helm upgrade --install airflow apache-airflow/airflow -n airflow -f airflow/my_values.yaml --debug`
 
+Apaga o cluster de Kubernetes no GCP: 
 `gcloud container clusters delete airflow-cluster --region "us-east1"`
 
 
