@@ -6,19 +6,20 @@
 
 ## Docker + Kubernetes + AirFlow + Spark Operator
 
-Estudo de criação de um ambiente Kubernetes na Google Cloud, com Cloud Storage (bucket), como parte do Módulo 4 do curso de MBA em Engenharia de Dados - IGTI - Bootcamp Engenheiro de dados Cloud, usando as seguites ferramentas/tecnologias:
+Estudo de caso de um ambiente Kubernetes na Google Cloud, com Cloud Storage (bucket), como parte do Módulo 4 do curso de MBA em Engenharia de Dados - IGTI - Bootcamp Engenheiro de dados Cloud, usando as seguites ferramentas/tecnologias:
 
 * Docker (docker file, docker job) - Docker Desktop (https://docs.docker.com/desktop/windows/install/)
 * Google SDK Client (https://cloud.google.com/sdk/docs/install-sdk)
 * Kubernetes Engine (pod, job, deployment e service)
 * Cloud Storage
-* Python
+* Python (https://www.python.org/downloads/)
 * Apache Airflow - Helm Chart for Apache Airflow (https://airflow.apache.org/docs/helm-chart/stable/index.html)
-* Spark Operator
+* Spark Operator 
 * Kubectx (https://github.com/ahmetb/kubectx)
-* Kubectl
-* Visual Studio Code
-* Terraform (cloud storage)
+* Chocolatey (https://chocolatey.org/install#individual)
+* Kubernetes CLI - Kubectl (https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
+* Visual Studio Code (https://code.visualstudio.com/download)
+* Terraform (https://www.terraform.io/downloads)
 
 Procedimento utlizado para provisionamento do Cluster Kubernetes e do Apache AirFlow:
 
